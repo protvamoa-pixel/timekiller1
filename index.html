@@ -415,7 +415,7 @@
       <div class="logo-word">Стекло<span>ROOM</span></div>
     </a>
     <nav>
-      <ul>
+      <ul id="desktopNavList">
         <li><a href="#about">О компании</a></li>
         <li><a href="#advantages">Преимущества</a></li>
         <li><a href="#process">Этапы работы</a></li>
@@ -434,13 +434,7 @@
 <div class="menu-backdrop" id="menuBackdrop"></div>
 <div class="mobile-menu" id="mobileMenu">
   <nav>
-    <ul>
-      <li><a href="#about">О компании</a></li>
-      <li><a href="#advantages">Преимущества</a></li>
-      <li><a href="#process">Этапы работы</a></li>
-      <li><a href="#gallery">Галерея</a></li>
-      <li><a href="#contacts">Контакты</a></li>
-    </ul>
+    <ul id="mobileNavList"></ul>
   </nav>
   <div class="mobile-menu-foot">
     <span class="nav-phone">+7 (964) 077-28-23</span>
@@ -795,6 +789,17 @@
 
   quickCalc();
 
+  // Sync mobile burger menu with desktop header nav (single source of truth)
+  (function(){
+    var desktopList = document.getElementById('desktopNavList');
+    var mobileList = document.getElementById('mobileNavList');
+    if(desktopList && mobileList){
+      desktopList.querySelectorAll('li').forEach(function(li){
+        mobileList.appendChild(li.cloneNode(true));
+      });
+    }
+  })();
+
   // Burger / mobile menu
   (function(){
     var burger = document.getElementById('burgerBtn');
@@ -816,7 +821,7 @@
     }
     burger.addEventListener('click', toggleMenu);
     backdrop.addEventListener('click', closeMenu);
-    menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
+    menu.addEventListener('click', function(e){ if(e.target.closest('a')) closeMenu(); });
     window.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeMenu(); });
   })();
 
