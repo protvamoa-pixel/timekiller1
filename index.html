@@ -60,7 +60,7 @@
   }
   .eyebrow::before{content:''; width:22px; height:1px; background:var(--emerald);}
 
-  /* ---------- Glass panel base ---------- */
+  
   .glass-panel{
     background: linear-gradient(160deg, rgba(255,255,255,0.06), rgba(255,255,255,0.015));
     border:1px solid var(--stroke);
@@ -75,7 +75,7 @@
     position:absolute; top:0; left:0; right:0; height:1px;
     background:linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
   }
-  /* ---------- Buttons ---------- */
+  
   .btn{
     display:inline-flex; align-items:center; justify-content:center; gap:10px;
     padding:17px 30px;
@@ -101,7 +101,7 @@
   .btn-ghost:hover{ background:rgba(255,255,255,0.08); border-color:rgba(255,255,255,0.35); }
   .btn-block{width:100%;}
 
-  /* ---------- Nav ---------- */
+  
   header{
     position:fixed; top:0; left:0; right:0; z-index:100;
     background: rgba(11,12,13,0.55);
@@ -193,7 +193,7 @@
   .menu-backdrop{ position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:97; opacity:0; pointer-events:none; transition:opacity .4s; }
   .menu-backdrop.open{ opacity:1; pointer-events:auto; }
 
-  /* ---------- Hero ---------- */
+  
   .hero{
     position:relative;
     min-height:100vh;
@@ -223,7 +223,7 @@
   .hero-stats div b{ font-family:'Unbounded'; font-size:26px; display:block; }
   .hero-stats div span{ font-size:12px; color:var(--silver-dim); text-transform:uppercase; letter-spacing:0.06em; }
 
-  /* Quick calc card in hero */
+  
   .quick-calc{ padding:32px; }
   .quick-calc h3{ font-size:19px; margin-bottom:6px; }
   .quick-calc p.sub{ font-size:13px; color:var(--silver-dim); margin-bottom:24px; }
@@ -237,7 +237,7 @@
   .field select:focus, .field input:focus{ border-color:var(--emerald); }
   .field-row{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
 
-  /* ---------- Custom select (smooth, readable dropdown) ---------- */
+  
   .custom-select{ position:relative; }
   .cs-trigger{
     width:100%; display:flex; align-items:center; justify-content:space-between;
@@ -285,7 +285,7 @@
   .section-head.center .eyebrow{ justify-content:center; }
   .section-head.center .eyebrow::before{ display:none; }
 
-  /* ---------- Advantages ---------- */
+  
   .adv-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--stroke); border:1px solid var(--stroke); border-radius:var(--radius-lg); overflow:hidden; }
   .adv-card{ background:var(--graphite-1); padding:44px 36px; transition:background .3s; }
   .adv-card:hover{ background:var(--graphite-2); }
@@ -293,7 +293,7 @@
   .adv-card h3{ font-size:18px; margin-bottom:10px; font-weight:600; }
   .adv-card p{ color:var(--silver-dim); font-size:14px; }
 
-  /* ---------- Process timeline ---------- */
+  
   .timeline{ position:relative; max-width:820px; margin:0 auto; }
   .timeline::before{ content:''; position:absolute; left:29px; top:12px; bottom:12px; width:1px; background:linear-gradient(180deg, var(--emerald), var(--blue), transparent); }
   .t-item{ display:flex; gap:28px; padding-bottom:52px; position:relative; }
@@ -303,7 +303,7 @@
   .t-body h3{ font-size:19px; margin-bottom:8px; }
   .t-body p{ color:var(--silver-dim); font-size:14px; max-width:520px; }
 
-  /* ---------- Gallery masonry ---------- */
+  
   .gallery-collection{ margin-bottom:48px; }
   .gallery-collection:last-child{ margin-bottom:0; }
   .collection-title{ font-size:18px; margin-bottom:22px; color:var(--silver); display:flex; align-items:center; gap:12px; }
@@ -313,7 +313,7 @@
   .masonry .m-item:hover{ transform:translateY(-4px); border-color:rgba(255,255,255,0.3); }
   .masonry .m-item img{ width:100%; display:block; }
 
-  /* ---------- CTA form ---------- */
+  
   .cta-section{ background:linear-gradient(160deg, rgba(35,196,166,0.08), rgba(77,163,255,0.04)); border-top:1px solid var(--stroke); border-bottom:1px solid var(--stroke); }
   .cta-grid{ display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:center; }
   .cta-left h2{ font-size:clamp(28px,3.2vw,40px); margin-bottom:20px; }
@@ -322,7 +322,7 @@
   .cta-left ul li svg{ min-width:20px; }
   .cta-form{ padding:40px; }
 
-  /* ---------- Contacts ---------- */
+  
   .contact-cards{ display:flex; flex-direction:column; gap:16px; }
   .contact-cards-full{ display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; }
   .c-card{ padding:24px; display:flex; align-items:center; gap:16px; }
@@ -330,7 +330,7 @@
   .c-card h4{ font-size:12px; text-transform:uppercase; letter-spacing:0.05em; color:var(--silver-dim); margin-bottom:5px; font-weight:500; }
   .c-card p{ font-size:15px; font-weight:600; font-family:'Unbounded'; }
 
-  /* ---------- Footer ---------- */
+  
   footer{ padding:70px 0 34px; border-top:1px solid var(--stroke); }
   .footer-top{ display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:40px; margin-bottom:60px; }
   .footer-col h4{ font-size:12px; text-transform:uppercase; letter-spacing:0.07em; color:var(--silver-dim); margin-bottom:20px; }
@@ -344,7 +344,7 @@
   .footer-bottom a{ color:var(--silver-dim); }
   .footer-bottom a:hover{ color:var(--white); }
 
-  /* ---------- Scroll reveal / fade ---------- */
+  
   .reveal{
     opacity:0;
     transform:translateY(56px);
@@ -402,7 +402,7 @@
     .contact-cards-full{ grid-template-columns:1fr; gap:12px; }
     .logo-word{ font-size:15px; }
 
-    /* ---- buttons on mobile ---- */
+    
     .btn{
       padding:15px 22px;
       font-size:12px;
@@ -433,7 +433,7 @@
 <body>
 
 
-<!-- ================= HEADER ================= -->
+  
 <header>
   <div class="wrap nav-row">
     <a href="#" class="logo-mark">
@@ -476,7 +476,7 @@
   </div>
 </div>
 
-<!-- ================= HERO ================= -->
+  
 <section class="hero reveal">
   <div class="hero-photo">
     <div class="beam" style="left:52%; opacity:.3;"></div>
@@ -535,7 +535,7 @@
   </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
+  
 <section id="about" class="reveal">
   <div class="wrap">
     <div class="section-head">
@@ -553,7 +553,7 @@
   </div>
 </section>
 
-<!-- ================= ADVANTAGES ================= -->
+  
 <section id="advantages" class="reveal">
   <div class="wrap">
     <div class="section-head">
@@ -596,7 +596,7 @@
   </div>
 </section>
 
-<!-- ================= PROCESS ================= -->
+  
 <section id="process" class="reveal">
   <div class="wrap">
     <div class="section-head center" style="margin-left:auto; margin-right:auto;">
@@ -632,7 +632,7 @@
   </div>
 </section>
 
-<!-- ================= GALLERY ================= -->
+  
 <section id="gallery" class="reveal">
   <div class="wrap">
     <div class="section-head">
@@ -661,7 +661,7 @@
   </div>
 </section>
 
-<!-- ================= CTA LEAD FORM ================= -->
+  
 <section class="cta-section reveal" id="lead">
   <div class="wrap">
     <div class="cta-grid">
@@ -684,7 +684,7 @@
   </div>
 </section>
 
-<!-- ================= CONTACTS ================= -->
+  
 <section id="contacts" class="reveal">
   <div class="wrap">
     <div class="section-head">
@@ -716,7 +716,7 @@
   </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
+  
 <footer>
   <div class="wrap">
     <div class="footer-top">
@@ -761,7 +761,6 @@
 </footer>
 
 <script>
-  // Quick calculator (hero)
   var qCurrentType = 'Перегородка';
   var qCurrentRate = 2000;
 
@@ -774,7 +773,6 @@
   }
   ['qW','qH'].forEach(function(id){ document.getElementById(id).addEventListener('input', quickCalc); document.getElementById(id).addEventListener('change', quickCalc); });
 
-  // Custom smooth dropdown for "Тип изделия"
   (function(){
     var wrap = document.getElementById('qTypeSelect');
     var trigger = document.getElementById('qTypeTrigger');
@@ -815,7 +813,6 @@
 
   quickCalc();
 
-  // Burger / mobile menu
   (function(){
     var burger = document.getElementById('burgerBtn');
     var menu = document.getElementById('mobileMenu');
@@ -840,7 +837,6 @@
     window.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeMenu(); });
   })();
 
-  // Scroll reveal: fade sections in when entering viewport, fade out when leaving
   (function(){
     var sections = document.querySelectorAll('.reveal');
     if(!('IntersectionObserver' in window)){
